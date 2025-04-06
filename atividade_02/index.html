@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 02</title>
+  <!-- Adicionado estilos através de CSS internos para definir a aparência visual de toda a página, melhorando a leitura dos textos. -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #333;
+    }
+    header {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    nav {
+      background-color: #333;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+      justify-content: space-around;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+    }
+    nav ul li a:hover {
+      background-color: #555;
+      border-radius: 5px;
+    }
+    main {
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
+    article {
+      margin-bottom: 30px;
+    }
+    section {
+      margin-bottom: 30px;
+      padding: 15px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .media-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .media-item {
+      max-width: 800px;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    img, video, audio {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+ 
+  <header>
+    <h1>Este é o título do cabeçalho da página</h1>
+    <h2>Este é o subtítulo do cabeçalho da página</h2>
+    <!-- Adicionado novo parágrafo "explicativo" para contextualizar a página-->
+    <p>Bem-vindo à nossa página web expandida com elementos multimídia e navegação aprimorada. Aqui você encontrará exemplos de HTML semântico, áudio, vídeo e muito mais.</p>
+  </header>
+  <!--Alteração dos links apontando para as seções específicas da página através de IDs. Incluída a seção Mídia-->
+  <nav>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#midia">Mídia</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+ <!-- Inclusão dos IDs correspondentes aos links de navegação-->
+  <main>
+    <article id="inicio">
+      <h2>Este é o título do artigo da página</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus praesentium voluptatum quae, accusantium, numquam asperiores doloribus fugit itaque aliquam recusandae deserunt minus minima consectetur sit similique. Qui quis debitis nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur atque tenetur laudantium delectus maiores voluptatibus error distinctio doloremque, reiciendis vel earum perferendis impedit a esse deleniti accusamus itaque animi. Quae?</p>
+      <!-- Págrafo adicional com conteúdo relevante para o artigo principal-->
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sed autem beatae accusamus est eius. Ullam voluptatibus ex accusantium velit numquam suscipit earum eius optio dolorum aperiam, ad culpa aliquid!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, fugiat quasi rem sunt delectus est cupiditate quam amet quod ratione explicabo? Voluptatibus nulla fugiat animi incidunt possimus voluptate est ex!</p>
+    </article>
+
+    <section id="sobre">
+      <h3>Este é o título da seção da página</h3>
+      <ul>
+        <li>Descrição do item 01 da seção</li>
+        <li>Descrição do item 02 da seção</li>
+        <li>Descrição do item 03 da seção</li>
+        <li>Descrição do item 04 da seção</li>
+      </ul>      
+    </section>
+    <!-- Incluídas <div> com estilos inline para criar um layout flexbox. Utilizado <h4> e <p> para títulos e descrições de cada serviço.-->
+    <section id="servicos">
+      <h3>Nossos Serviços</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between;">
+        <div style="flex: 1; min-width: 200px; background-color: #e9e9e9; padding: 15px; border-radius: 5px;">
+          <h4>Serviço 1</h4>
+          <p>Descrição detalhada do primeiro serviço oferecido.</p>
+        </div>
+        <div style="flex: 1; min-width: 200px; background-color: #e9e9e9; padding: 15px; border-radius: 5px;">
+          <h4>Serviço 2</h4>
+          <p>Descrição detalhada do segundo serviço oferecido.</p>
+        </div>
+        <div style="flex: 1; min-width: 200px; background-color: #e9e9e9; padding: 15px; border-radius: 5px;">
+          <h4>Serviço 3</h4>
+          <p>Descrição detalhada do terceiro serviço oferecido.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Incluída nova seção multimídia com áudio e vídeo-->
+    <section id="midia" class="media-section">
+      <div class="media-item">
+        <h3>Elementos Multimídia</h3>
+        <h4>Imagem</h4>
+        <img src="https://www.ceara.gov.br/wp-content/uploads/2024/04/IMG_2054.jpg" alt="Banner do programa Geração Tech">
+      </div>
+      
+      <div class="media-item">
+        <h4>Vídeo</h4>
+        <video controls>
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          Seu navegador não suporta a tag de vídeo.
+        </video>
+        <p>Este é um exemplo de vídeo incorporado usando a tag &lt;video&gt;.</p>
+      </div>
+      
+      <div class="media-item">
+        <h4>Áudio</h4>
+        <audio controls>
+          <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" type="audio/mpeg">
+          Seu navegador não suporta a tag de áudio.
+        </audio>
+        <p>Este é um exemplo de áudio incorporado usando a tag &lt;audio&gt;.</p>
+      </div>
+    </section>
+    <!-- Incluída nova seção para formulário de contato com estilos inline em cada item.-->
+    <section id="contato">
+      <h3>Entre em Contato</h3>
+      <form>
+        <div style="margin-bottom: 15px;">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ddd;">
+        </div>
+        <div style="margin-bottom: 15px;">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ddd;">
+        </div>
+        <div style="margin-bottom: 15px;">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ddd;"></textarea>
+        </div>
+        <button type="submit" style="background-color: #333; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <!-- Incluído o <footer> com informações de copyright -->
+  <footer>
+    <p>&copy; 2025 - Lisio Souza</p>
+    <address>
+      Contato: <a href="mailto:exemplo@email.com" style="color: #f0f0f0;">lisiosouz@gmail.com</a>
+    </address>
+  </footer>
+</body>
+</html>
